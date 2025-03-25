@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <img
+        src="https://cdn.prod.website-files.com/65d6e38daf571001e8ac8fba/6602cde81c782f0a80755c47_new%20logo.svg"
+        alt="logo" 
+        class="logo"
+        title="logo"
+      />
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home" title="home link">Home</a></li>
+          <li class="nav-item"><a href="#signup" title="signup link">Signup</a></li>
+          <li class="nav-item"><a href="#summary" title="summary link">Summary</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main section -->
+    <main class="main-content">
+      <!-- Home section -->
+      <section class="home" id="home">
+        <h1 class="home-title">
+          Automate your
+          <span class="title-span">Gate Operations</span>
+          with our AI platform
+        </h1>
+        <p class="home-text">We help transform terminals and ports worldwide by enhancing their efficiency, capacity, and transparency across all their operations.</p>
+        <a href="#" class="home-btn">See More</a>
+      </section>
+      <hr class="break" />
+      <!-- Summary section -->
+      <section class="summary" id="summary">
+        <h1 class="summary-title">Employee Details</h1>
+        <table>
+          <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Salary</th>
+          </thead>
+          <tbody id="table-body"> </tbody>
+        </table>
+      </section>
+      <hr class="break" />
+      <!-- Signup section -->
+      <section class="signup" id="signup">
+        <h1 class="home-title">Signup Form</h1>
+        <form action="#" class="signup-form" autocomplete="off">
+          <div class="input-group">
+            <label for="name" class="form-label">Full Name:</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Enter your full name" 
+              required 
+              class="form-input" 
+            />
+          </div>
+          <div class="input-group">
+            <label for="email" class="form-label">Email:</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Enter your email" 
+              required 
+              class="form-input" 
+            />
+          </div>
+          <div class="input-group">
+            <label for="password" class="form-label">Password:</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Enter your password" 
+              required 
+              class="form-input" 
+            />
+          </div>
+          <div class="input-group">
+            <label for="skills" class="form-label">Skills:</label>
+            <select id="skills" name="skills" required class="form-input">
+              <option value="">---select your skill---</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="Python">React</option>
+              <option value="Java">Angular</option>
+              <option value="C++">React Native</option>
+              <option value="HTML/CSS">HTML/CSS</option>
+              <option value="Others">Django</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="address" class="form-label">Address:</label>
+            <textarea 
+              id="address" 
+              name="address" 
+              rows="4" 
+              placeholder="Enter your address" 
+              required 
+              class="form-input" 
+            ></textarea>
+          </div>
+          <button type="submit" class="form-btn">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer-cont">
+        <div class="footer-social-box">
+          <img
+            src="https://cdn.prod.website-files.com/65d6e38daf571001e8ac8fba/6602cde81c782f0a80755c47_new%20logo.svg"
+            alt="logo" 
+            class="logo"
+          />
+          <p>Automating global supply chain operations using Al.</p>
+          <section class="footer-social-card">
+            <a href="https://www.facebook.com/ataiinc/" target="_blank" title="facebook">
+              <img
+                src="https://cdn.prod.website-files.com/65d6e38daf571001e8ac8fba/65e5a0478ccf67dc8640b0a5_fb.svg"
+                alt="facebook"
+                class="footer-icon"
+              />
+            </a>
+            <a href="https://www.linkedin.com/company/ataiinc/" target="_blank"  title="linkedin">
+              <img
+                src="https://cdn.prod.website-files.com/65d6e38daf571001e8ac8fba/65e5a047c49a1a0707a0708f_linkedin.svg"
+                alt="linkedin"
+                class="footer-icon"
+              />
+            </a>
+            <a href="https://x.com/atai_ai" target="_blank"  title="x">
+              <img
+                src="https://cdn.prod.website-files.com/65d6e38daf571001e8ac8fba/65e5a01af927e8daca29fd3c_twitter.svg"
+                alt="x"
+                class="footer-icon"
+              />
+            </a>
+          </section>
+        </div>
+        <div class="footer-link-box">
+          <h3>Quick Links</h3>
+          <ul class="link-menu">
+            <li class="link-item"><a href="#">Home</a></li>
+            <li class="link-item"><a href="#">Signup</a></li>
+            <li class="link-item"><a href="#">Summary</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="footer-copy-right">&copy; 2021 ATAI. All rights reserved.</p>
+    </footer>
+
+    <!-- external javascript file -->
+    <script>
+      let tableBodyElement = document.getElementById('table-body')
+      let arr = [
+        {
+          id: 1,
+          name: 'Tamilarasan',
+          email: 'tamilarasan.s@atai.ai',
+          company: 'ATAI',
+          role: 'Frontend Developer',
+          salary: '25000'
+        },
+        {
+          id: 2,
+          name: 'Raghavan',
+          email: 'raghavan@gmail.com',
+          company: 'NI',
+          role: 'Software Technician',
+          salary: '40000'
+        },
+        {
+          id: 3,
+          name: 'Maridurai',
+          email: 'maridurai.r@atai.ai',
+          company: 'ATAI',
+          role: 'Backend Developer',
+          salary: '25000'
+        },
+        {
+          id: 4,
+          name: 'Jaganath',
+          email: 'jagan@gmail.com',
+          company: 'NI',
+          role: 'Software Technician',
+          salary: '40000'
+        },
+        {
+          id: 5,
+          name: 'Lakshminarayanan',
+          email: 'lakshminarayanan.b@atai.ai',
+          company: 'ATAI',
+          role: 'Backend Developer',
+          salary: '25000'
+        }
+      ]
+      
+      arr.forEach(item => {
+        let tableRowEl = document.createElement('tr')
+      
+        let idData = document.createElement('td')
+        idData.textContent = item.id
+        
+        let nameData = document.createElement('td')
+        nameData.textContent = item.name
+        
+        let emailData = document.createElement('td')
+        emailData.textContent = item.email
+        
+        let companyData = document.createElement('td')
+        companyData.textContent = item.company
+        
+        let roleData = document.createElement('td')
+        roleData.textContent = item.role
+        
+        let salaryData = document.createElement('td')
+        salaryData.textContent = item.salary
+      
+        tableRowEl.appendChild(idData)
+        tableRowEl.appendChild(nameData)
+        tableRowEl.appendChild(emailData)
+        tableRowEl.appendChild(companyData)
+        tableRowEl.appendChild(roleData)
+        tableRowEl.appendChild(salaryData)
+      
+        tableBodyElement.appendChild(tableRowEl)
+      });
+    </script>
+  </body>
+</html>

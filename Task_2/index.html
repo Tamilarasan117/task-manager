@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/logo1.png" alt="logo" class="logo" />
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-user"></i>
+            <a href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <a href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-cont">
+      <section class="home-cont" id="home">
+        <h1 class="heading">
+          Welcome to <span class="span">Index Info</span> <br />
+          Innovating the Future of Technology
+        </h1>
+        <button type="button" class="btn">Read More -</button>
+      </section>
+
+      <section class="about-cont" id="about">
+        <h1 class="title">About Us</h1>
+        <img src="./assets/logo2.png" alt="logo" class="about-logo">
+        <p class="desctiption">
+          At Index Info, we are more than just a technology solutions provider 
+          – we are a driving force behind innovation, bridging the gap between 
+          cutting-edge technologies and everyday needs. Our passion for 
+          technology fuels everything we do, from curating high-quality 
+          products to developing tailored solutions that empower businesses and 
+          individuals to succeed in an increasingly digital world.
+        </p>
+        <button type="button" class="btn">Read More -</button>
+      </section>
+
+      <section class="about-cont" id="services">
+        <h1 class="title">Our Services</h1>
+        <div class="service-card-cont">
+          <div class="card">
+            <div class="image-cont">
+              <img src="./assets/s1.jpg" alt="Image 1" class="image">
+              <div class="text-overlay">Custom Software Development</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-cont">
+              <img src="./assets/s2.jpg" alt="Image 2" class="image">
+              <div class="text-overlay">Cloud Solutions</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-cont">
+              <img src="./assets/s3.jpg" alt="Image 1" class="image">
+              <div class="text-overlay">IT Consulting & Strategy</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-cont">
+              <img src="./assets/s4.jpg" alt="Image 2" class="image">
+              <div class="text-overlay">Product Design & Development</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-cont">
+              <img src="./assets/s5.jpg" alt="Image 1" class="image">
+              <div class="text-overlay">Digital Marketing & SEO</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-cont">
+              <img src="./assets/s6.jpg" alt="Image 2" class="image">
+              <div class="text-overlay">Data Analytics & Business Intelligence</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-cont">
+        <h1 class="title">What Says Our Customers</h1>
+        <div class="why-box">
+          <div class="why-card">
+            <img src="./assets/client.jpg" alt="avatar" class="avatar">
+            <h1 class="what-title">Maridurai</h1>
+            <p class="what-desc">
+              Index Info helped us implement a custom solution that completely 
+              transformed our operations. The team took the time to understand 
+              our unique challenges and ...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-cont">
+        <h1 class="title">Why Choose Us?</h1>
+        <div class="why-box">
+          <div class="why-card">
+            <h1 class="why-title">Innovation at the Core</h1>
+            <p class="why-desc">
+              We're constantly on the lookout for the latest advancements in 
+              technology. Our team is dedicated to leveraging emerging trends to
+              develop solutions...
+            </p>
+          </div>
+          <div class="why-card">
+            <h1 class="why-title">Tailored Solutions</h1>
+            <p class="why-desc">
+              No two businesses are alike, which is why we don't believe in 
+              one-size-fits-all solutions. We take the time to understand 
+              your specific...
+            </p>
+          </div>
+          <div class="why-card">
+            <h1 class="why-title">Cutting-Edge Products</h1>
+            <p class="why-desc">
+              We handpick only the best technologies that offer real value to 
+              our clients. Our products are selected for their quality, 
+              innovation, and ability...
+            </p>
+          </div>
+          <div class="why-card">
+            <h1 class="why-title">Expertise You Can Trust</h1>
+            <p class="why-desc">
+              With years of experience in the tech industry, our team combines 
+              technical expertise with industry know-how. Whether it’s 
+              implementing...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-cont" id="contact">
+        <h1 class="title">Get in Touch</h1>
+        <form action="#" class="get-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Your email address">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" required placeholder="Your phone number">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+          </div>
+          <input type="submit" class="form-btn" value="Submit" />
+        </form>
+      </section>
+
+      <footer class="footer-cont" id="footer">
+        <h1 class="title">Our News Letter</h1>
+        <form class="form">
+          <input type="text" class="input-field" placeholder="Enter your email here..." required />
+          <input type="submit" value="Submit" class="button">
+        </form>
+        <section class="link-box">
+          <div class="footer-box">
+            <h1 class="link-title">About Index Info</h1>
+            <p class="description2">
+              At Index Info, we are more than just a technology solutions provider 
+              – we are a driving force behind innovation, bridging the gap between 
+              cutting-edge technologies and everyday needs. Our passion for 
+              technology fuels everything we do...
+            </p>
+          </div>
+          <ul class="link-menu">
+            <li class="link link-title">Menus</li>
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About Us</a></li>
+            <li class="link"><a href="#services">Services</a></li>
+            <li class="link"><a href="#contact">Contact Us</a></li>
+          </ul>
+          <ul class="link-menu">
+            <li class="link link-title">Contact Us</li>
+            <li class="link">
+              <i class="fa-solid fa-location-dot"></i>
+              <a href="#">Hyderabad, Telangana</a>
+            </li>
+            <li class="link">
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">+91 0987654321</a>
+            </li>
+            <li class="link">
+              <i class="fa-solid fa-globe"></i>
+              <a href="#">indexinfo@info.in</a>
+            </li>
+          </ul>
+        </section>
+        <section class="social-box">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </section>
+        <p class="copy-right">&copy; 2045 All Rights Reserved. By Index Info</p>
+      </footer>
+    </main>
+  </body>
+</html> 

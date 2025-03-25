@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- calculator -->
+    <h1 class="head">Calculator</h1>
+    <div class="calculator" id="calculator">
+      <input type="text" id="display" class="result" value="0.00">
+      <div class="btn-container">
+        <div class="btn-box1">
+          <div class="buttons">
+            <button class="btn operator" onclick="addOperator('+')">+</button>
+            <button class="btn operator" onclick="addOperator('-')">-</button>
+            <button class="btn operator" onclick="addOperator('*')">*</button>
+          </div>
+          <div class="buttons">
+            <button class="btn number" onclick="addNumber(7)">7</button>
+            <button class="btn number" onclick="addNumber(8)">8</button>
+            <button class="btn number" onclick="addNumber(9)">9</button>  
+          </div>
+          <div class="buttons">
+            <button class="btn number" onclick="addNumber(4)">4</button>
+            <button class="btn number" onclick="addNumber(5)">5</button>
+            <button class="btn number" onclick="addNumber(6)">6</button>
+          </div>
+          <div class="buttons">
+            <button class="btn number" onclick="addNumber(1)">1</button>
+            <button class="btn number" onclick="addNumber(2)">2</button>
+            <button class="btn number" onclick="addNumber(3)">3</button>
+          </div>
+          <div class="buttons">
+            <button class="btn number" onclick="addNumber(0)">0</button>
+            <button class="btn number" onclick="addDecimal()">.</button>
+            <button class="btn clear" onclick="clearDisplay()">C</button>
+          </div>
+        </div>
+        <div class="btn-box2">
+          <button class="btn operator" onclick="addOperator('/')">/</button>
+          <button class="btn operator equal-to" onclick="addOperator('=')">=</button>
+          <button class="btn operator delete" onclick="deleteDisplay()">Del</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
