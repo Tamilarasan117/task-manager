@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Timeline Container */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Timeline Line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 6px;
+  background-color: #e74c3c;
+  transform: translateX(-50%);
+}
+
+/* Timeline Items */
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Content Styling */
+.timeline-content {
+  background: #e74c3c;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  width: 45%;
+  position: relative;
+  text-align: left;
+}
+
+/* Positioning Left and Right */
+.left {
+  left: 0;
+}
+
+.right {
+  left: 55%;
+}
+
+/* Content Animation */
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.left::before {
+  right: -10px;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #e74c3c;
+}
+
+.right::before {
+  left: -10px;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #e74c3c transparent transparent;
+}
+
+/* Timeline Dots */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  border: 3px solid white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .timeline::before {
+      left: 20px;
+  }
+
+  .timeline-content {
+      width: 80%;
+      left: 30px;
+  }
+
+  .timeline-item::after {
+      left: 20px;
+  }
+}
