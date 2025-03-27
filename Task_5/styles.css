@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 6rem 4rem;
+  background-color: #e043a4;
+
+  h1 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+
+  i {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+}
+.main-cont {
+  background-color: #2091D7;
+  min-height: 82vh;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.content-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 2.5rem;
+  width: 70%;
+}
+.head {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+.desc {
+  color: #fff;
+  font-size: 1rem;
+}
+.line-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+.triangle1 {
+  display: block;
+  position: absolute;
+  left: 98%;
+  top: 70%;
+  height: 2rem;
+  width: 2rem;
+  background-color: #e0349e;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+.triangle2 {
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 70%;
+  height: 2rem;
+  width: 2rem;
+  background-color: #e0349e;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+.line {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border: 3px solid #fff;
+  z-index: 0;
+}
+.rounded {
+  position: absolute;
+  top: 85%;
+  height: 2rem;
+  width: 2rem;
+  background-color: #fff;
+  border-radius: 100%;
+  z-index: 1;
+  transition: all 2s ease-in;
+}
+.change {
+  position: relative;
+  background-color: #e0349e;
+}
+.box1 {
+  background-color: #e0349e;
+  border-radius: 10px;
+  padding: 2.5rem 1.8rem;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+.box2 {
+  background-color: #e0349e;
+  border-radius: 10px;
+  padding: 2.5rem 1.8rem;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+.card1 {
+	animation: left-side 3s forwards;
+}
+@keyframes left-side {
+	0% {
+    transform: translateX(-50%);
+  }
+	100% {
+    opacity: 1;
+    transform: translateX(3%);
+  }	
+}
+.card2 {
+  animation: right-side 3s forwards alternate;
+}
+@keyframes right-side {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-3%);
+  }
+}
