@@ -1,0 +1,12 @@
+1) Implement custom toaster ✅
+2) Make Add Todo as a popup instead of component. ✅
+3) Implement Typescript (I didn't implemented full typescript concept because still I'm learning.)
+4) Use id while defining any Array<Object> ✅
+5) No Need to store data in localstorage (In API it give only read permission, so for update and delete functionality I have used localstorage)
+6) Create a separate component for loader and consume it in application. ✅
+7) use Local icons instead of getting it from some third party libraries ✅
+8) Use Enums (I'm not understanding the concept)
+9) Design should be pixel perfect ✅
+10) Bug found in the search functionality ✅
+11) Introduce global state ✅
+12) Bug in checkbox ✅
